@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certifications",
+  "info": {
+    "singularName": "certification",
+    "pluralName": "certifications",
+    "displayName": "Certification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "career": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.career"
+    }
+  }
+}

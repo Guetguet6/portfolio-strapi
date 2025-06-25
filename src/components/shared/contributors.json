@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_contributors",
+  "info": {
+    "displayName": "Contributors",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contributor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contributor.contributor"
+    },
+    "role": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "integer",
+      "default": 10,
+      "max": 100,
+      "min": 0,
+      "required": true
+    }
+  }
+}
