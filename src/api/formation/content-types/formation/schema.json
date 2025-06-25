@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations",
+  "info": {
+    "singularName": "formation",
+    "pluralName": "formations",
+    "displayName": "Formation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": ["createdAt", "updatedAt", "publishedAt"]
+  },
+  "attributes": {
+    "career": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.career"
+    },
+    "contractType": {
+      "type": "enumeration",
+      "enum": [
+        "CDD",
+        "CDI",
+        "Intérimaire",
+        "Saisonnier",
+        "Alternance",
+        "Stage"
+      ],
+      "required": true
+    }
+  }
+}
